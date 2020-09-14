@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Что приготовить?</title>
+
+  <script src="assets/vue.js"></script>
+  <script src="assets/lodash.js"></script>
+  <script src="assets/gsap.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+  <div id="app" class="content-container">
+    <div class="grid-row">
+      <div class="meal-title">{{ breakfast[0] }}</div><button class="my-button breakfast" @click="breakfastClick">Завтрак</button>
+    </div>
+    <div class="grid-row">
+      <div class="meal-title">{{ lunch[0] }}</div><button class="my-button lunch" @click="lunchClick">Обед</button>
+    </div>
+    <div class="grid-row">
+      <div class="meal-title">{{ dinner[0] }}</div><button class="my-button dinner" @click="dinnerClick">Ужин</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
